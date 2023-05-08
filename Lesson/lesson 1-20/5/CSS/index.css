@@ -1,0 +1,20 @@
+
+
+h1 {
+    color: rgb(240, 156, 13);
+}
+div {background-color: rgb(121, 247, 148);}
+
+p{
+    background: chocolate;
+}
+
+.אאא {
+    background-color: royalblue; 
+    color: black; 
+    padding: 35px;
+}
+.אאא:hover {
+    background-color: black;
+    color: white;
+}

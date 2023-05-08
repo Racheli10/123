@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       html{scroll-behavior: smooth;}
+       #aaa{background-color: yellow;height: 50vh; border: 5px solid black;}
+       #bbb{background-color: orange;height: 50vh; border: 5px solid black;}
+       #ccc{background-color: red;height: 50vh; border: 5px solid black;}
+       #ddd{background-color: green;height: 50vh; border: 5px solid black;}
+       .eee::first-letter {
+        font-size: 30px;
+        color: blueviolet;
+       }
+       .azaz{
+        height: 50px;
+        width: 100%;}
+        .azaz::before{
+            position:absolute;
+        }
+    </style>
+</head>
+<body style="height: 350vh;">
+    <div class="azaz">hellow world</div>
+    <div id="aaa"><a href="#ccc"> RACHELI  BITON</a></div>
+    <div id="bbb"> <a href="#ddd">ELCHANAN BITON</a></div>
+    <div id="ccc"><a href="#aaa"> DUDI     BITON</a></div>
+    <div class="eee" id="ddd"><a href="#bbb"> GILI     BITON</a></div>
+    <p class="eee">Once upon a time in a faraway land...</p>
+
+</body>
+
+</html>

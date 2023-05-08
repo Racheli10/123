@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body, html{
+    background-color: rgb(235, 204, 7);
+    height: 100%;
+}
+    .cal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows:minmax(150px,auto) repeat(3, 120px)(1, 240px );
+    gap: 1px;
+    margin-top: 15%;
+    background-color: black;
+    box-shadow: 5px 5px 5px rgba( 0,0,0,0.4);
+    border-radius: 20px;
+
+}
+   
+    
+</style>
+<body>
+   
+    <div class="cal" id="cal">
+        <input type="number" name="number" id="num" style="grid-column: 1/5;">
+        <button>ac</button>
+        <button>(</button>
+        <button>)</button>
+        <button style="background-color:aquamarine;">/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button style="background-color:aquamarine;">*</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button style="background-color:aquamarine;">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button style="background-color:aquamarine;">+</button>
+        <button>0</button>
+        <button>.</button>
+        <button style="grid-column:3/5;" >=</button>
+    
+    </div>
+    <script src="./HW.js"></script>
+</body>
+</html>

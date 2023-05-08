@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+       #fname{
+        background-color: coral;
+        transition-duration:yellow;
+       }
+        .bbb {
+            font-size:2rem;
+            background-color: blueviolet;
+            color: azure;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+        }
+        .bbb:hover{
+            font-size: 50px;
+            background-color: black;
+            color: aqua;
+            font-size:100px;
+        }
+#aaa :hover{ 
+    background-color: blue;
+    color: brown;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: rgb(255, 0, 255);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  background-color: green;
+  color: #f34079;
+  cursor: pointer;}
+
+  :root {
+    /* This is a top level element that will allow us to set variables and set top level style  */
+    --primary: #05445E;
+    --secondary: #189AB4;
+    --tertiary: #75E6DA;
+    --btn: #D4F1F4;
+    --primary-background: #ccc;
+    --secondary-background: #000;
+    --tertiary-background: #f2f2f2;
+
+    --font-base-size: 30px;
+}
+body {
+    font-size: var(--font-base-size);
+}
+
+.overview {
+    background-color: var(--primary-background);
+    color: var(--primary);
+}
+
+.bth {
+    --btn-size: 10%;
+    background-color: var(--tertiary);
+    width: var(--btn-size);
+    height: 10%;
+    border: none;
+    height: 5ex;
+}
+.btn:active {
+    font-size: 100px;
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+.Bth {
+    --btn-size: 10%;
+    width: var(--btn-size);
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 2s ease-in
+        ,color 5s ease-in
+        ,width 1s ease-out;
+}
+
+.Bth:active {
+    --btn-size: 70%;
+    box-shadow: 2px 2px 5px #fc894d;
+    background: red;
+    color: blueviolet;
+    font-size: 100px;
+}
+
+.parent > p {
+    background-color: #ccc;
+}
+.descendant p {
+    background-color: #fc894d;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #dfc;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+    </style>
+   
+</head>
+<body style="height: 300vh; background-color:#f3407941;">
+
+ <br>
+<br>
+<div style="font-size: 50px;" class="box">i love my family </div>
+<br>
+<div class="lds-heart"><div></div></div>
+<div style="background-color: palevioletred;
+position: sticky;left: 35px; top: 30px;">
+this is stiky  
+</div>
+<br>
+<div box>כיתוב עם צבע משתנה </div>
+<id>היחיד שיש לו id</id>
+    <div class="bbb">
+        aaaaaaaaa
+        <div>
+            ffffffffff
+        </div>
+    </div>
+    <div id="aaa">
+        zzzzzzzzzzzz
+    </div>
+    <div style="font: size 200%;">
+        werwrrer
+    </div>
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</body>
+
+
+</html>

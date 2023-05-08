@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.flexbox {
+    border-radius: 5px solid blueviolet;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content:space-evenly;
+}
+.flexbox > div {
+ border:  5px solid salmon;
+ font-size: 30px;
+
+}
+@media screen and {
+    max-width; 
+    
+}
+.fname {
+    background-color: blueviolet;
+    border: 6px;
+    font-size: 15px;
+}
+
+.fname:focus-visible{
+    background-color: rgb(154, 102, 227);
+    font-size: 2rem ;
+    color:palevioletred ;
+    
+}
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(red, yellow, green, blue,pink);
+ -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.aaa:hover{
+color: brown;
+transition: 5s;
+    font-size: 70px;
+    background-color: chartreuse;
+}
+    </style>
+</head>
+<body>
+    
+
+    <h1 style="border: 5px;">
+         Racheli
+         <br> Biton
+    </h1>
+    <div class="flexbox">
+        <div >
+           Home
+        </div>
+        <div>
+            Game
+        </div>
+        <div class="aaa" style="background-color: blueviolet;">
+            About
+        </div>
+        <div>
+          Projects
+        </div>
+        <div>
+            Contact
+        </div>
+    </div>
+    <br>
+    <div class="fname">
+        <input type="text" class="fname" name="fname" value="racheli biton">
+        <label for="fname"> good</label>
+        </div>
+</body>
+</html>

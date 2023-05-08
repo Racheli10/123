@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example {
+            background-color: aquamarine;
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*           x      y   r     color */
+            /* box-shadow: -10px -10px 3px brown; */
+            transition: 
+                width 4s linear,
+                transform 1s ease-in-out,
+                background-color 2s ease-in,
+                font-size 300ms ease-out;
+        }
+
+        .example:hover {
+            /* first is           left, top   */
+            transform: translate(0%, 0%);
+            width: 50%;
+            background-color: blueviolet;
+           text-shadow: 0px 0px transparent;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-shadow: 5px 5px 1px brown;">RIVKI HAROSH</h1>
+    <div style="height: 50vh; border: 5px solid burlywood; position: relative;">
+        <div class="example">rick</div>
+    </div>
+    <img src="ccc.jpg" width="200" alt="" srcset="">
+</body>
+
+</html>

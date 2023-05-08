@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.grid {
+    height: 50vh;
+    background-color: aqua;
+    border:3px;
+    display: grid;
+    grid-template-columns:repeat(4 1fr) ;
+    gap: 10px;
+    height: 90vh;
+    font-size: 3rem;
+    text-align: center;
+}
+.grid>div {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.span-2-column{
+    grid-column: span 2;
+}
+.span-2-row{
+    grid-row: span 2;
+}
+    </style>
+    
+</head>
+<body>
+        <div class="grid">
+            <div style="grid-column:1/3;">data</div>
+            <div style="grid-column-start: 3; grid-column-end: 4;">test</div>
+            <div style="grid-column-start: 4; grid-column-end: 5;
+            grid-row-start:1; grid-row-end: 4">sidebar</div>
+            <div style="grid-column-start: 1; grid-column-end: 2;">info</div>
+            <div style="grid-column-start: 2; grid-column-end: 3;">y</div>
+            <div style="grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4;">contact</div>
+            <div style="grid-column-start: 1; grid-column-end: 3;">x</div>
+           
+        </div>
+        
+       
+    </table>
+</body>
+</html>

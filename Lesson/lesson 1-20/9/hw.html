@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            color: coral;
+            background-color: black;
+            font-size: 30px;
+            line-height: 75px;
+            flex-grow: 0.5;
+        }
+    
+
+        .stack{
+            position: absolute;
+            background-color: blueviolet;
+            width: 120px;
+            height: 200vh;
+            border: 1px dotted white;
+            z-index: 1;
+        }
+        .stack:hover {
+            background-color: aqua;
+            font-size: 80px;
+            transform :3s ease-in-out;
+           
+
+        }
+        .stackChild {
+            position: relative;
+            z-index: 1;
+            border: 2px dashed rgb(43, 174, 226);
+            height: 8em;
+            margin-bottom: 1em;
+            margin-top: 2em;
+            z-index: -1;}
+       .aaa{
+         font-size: 30px;
+        position: sticky;
+       }
+
+       .aaa:hover{
+        font-size: 80px;
+        transition: 5;
+       }
+       .bbb {
+        transform:rotate (20deg);
+        background-color:red;
+
+
+       }
+    </style >
+</head>
+<body>
+    <h1 class="stack">My first website
+    </h1>
+    <div class="flex-box">
+        <div style="display: flex;border: dotted;color: rgb(247, 205, 127);" class="aaa">Home</div>
+        <div  style="display: flex; border: dotted;color:rgb(247, 205, 127);">Game</div>
+        <div  style="display: flex;border: dotted;color:rgb(247, 205, 127);">About</div>  
+        <div  style="display: flex;border: dotted;color:rgb(247, 205, 127);">Client</div> 
+    </div>
+   <div class="stackchild" style="background-color: rgb(226, 40, 233); border-radius: 30px solid blue; position: relative">
+cfgdhcghcjh
+njkgbjmbjmn
+
+   </div>
+   <div class="bbb">
+    mY NAME IS RACHELI
+
+   </div>
+    
+</body>
+</html>

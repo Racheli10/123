@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .media {
+        background-color: rgba(100, 148, 237, 0.947);
+        color: black;
+    border-radius: 80px ;
+    }
+
+    @media  screen and (max-width:600px) {
+        .media {
+            font-weight:bolder;
+            background-color: green;
+        }
+        /* On screens that are 300px wide or less, the background color is blue */
+@media screen and (max-width: 300px) {
+.media {
+    background-color:rebeccapurple;
+    color: white;
+  }}
+}
+ </style>
+</head>
+<body>
+<div class="media" style="font-size: 3rem;">בואו ונראה איך זה עובד;
+
+    <h1 class="media">
+        media media media media media media 
+
+    </h1>
+</div>
+
+
+</body>
+</html>

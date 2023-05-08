@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let family= {
+             name:"Racheli",
+             r:100,
+             age:30,
+            parents :{ dad:"david",mom:"eti"},
+        child:{san:'david' ,da:"gili",san2:'yehoda'}}
+
+        let line = {
+    x1: 4,
+    y1: 0,
+    x2: 0,
+    y2: 3,
+}
+
+function calcDistance(lineForPoints) {
+    let x_difference = lineForPoints.x1 - lineForPoints.x2;
+    let x_difference_power = math.power(x_difference, 2);
+
+    let y_difference = lineForPoints.y1 - lineForPoints.y2;
+    let y_difference_power = math.pow(y_difference, 2 );
+
+    let x_difference_plus_y = x_difference_power + y_difference_power;
+    let distance = math.sqrt(x_difference_plus_y);
+    
+}
+
+calcDistance(line)
+
+    </script>
+</body>
+</html>

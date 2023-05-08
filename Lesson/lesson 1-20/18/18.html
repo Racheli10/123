@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            background-color:black;
+            color:white;}
+
+         #reset {
+          text-align: center;
+        }
+        
+        .rrr {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        height: 99vh;}
+    
+        button {
+            font-size: 25px;
+            background-color: transparent;
+            color:white;
+            border: none;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            transition: 0.3s ease-in-out;}
+        #nnn {
+            font-size: 800%;}
+      
+
+    </style>
+</head>
+<body>
+
+    <button id="reset"></button>
+  <div class="rrr">
+    <button id="increment">-</button>
+    <div id="nnn">0</div>
+    <button id="decrement">+</button>
+</div>
+
+    <script>
+     let count=0;
+     let nnn = document.getElementById ('nnn')
+     let decrement= document.getElementById('decrement');
+     let increment= document.getElementById('increment');
+     let reset = document.getElementById('reset');
+
+        function buttonDecrementClicked(){
+             count =count -1;
+            loremEl.textContent=count;
+
+        }
+        function buttonClicked(){
+            count =count +1;
+            loremEl.textContent=count ;
+        }
+
+        function resetFunction(){
+            count
+        }
+
+        increment.addEventListener('click',incrementFunction);
+        decrement.addEventListener('click',decrementFunction);
+        reset.addEventListener('click',resetFunction)
+
+    </script>
+</body>
+</html>
